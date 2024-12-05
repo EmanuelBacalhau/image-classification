@@ -10,11 +10,7 @@ import * as Mobilenet from '@tensorflow-models/mobilenet';
 import * as FileSystem from 'expo-file-system';
 import { decodeJpeg } from '@tensorflow/tfjs-react-native'
 import { Classification } from "./components/classification";
-
-type ClassificationType = {
-  className: string;
-  probability: number;
-}
+import type { ClassificationType } from "./types/classification-type";
 
 export default function App() {
   const [imageUri, setImageUri] = useState<string>('https://t4.ftcdn.net/jpg/06/71/92/37/360_F_671923740_x0zOL3OIuUAnSF6sr7PuznCI5bQFKhI0.jpg');
